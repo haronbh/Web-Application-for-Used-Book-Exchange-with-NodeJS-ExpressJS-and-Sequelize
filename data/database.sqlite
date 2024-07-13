@@ -1,0 +1,20 @@
+-- Création de la table Authors
+CREATE TABLE Authors (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT
+);
+
+-- Création de la table Books
+CREATE TABLE Books (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title TEXT
+);
+
+-- Création de la table de liaison AuthorBook pour gérer la relation many-to-many
+CREATE TABLE AuthorBook (
+    authorId INTEGER,
+    bookId INTEGER,
+    FOREIGN KEY (authorId) REFERENCES Authors(id),
+    FOREIGN KEY (bookId) REFERENCES Books(id),
+    PRIMARY KEY (authorId, bookId)
+);
