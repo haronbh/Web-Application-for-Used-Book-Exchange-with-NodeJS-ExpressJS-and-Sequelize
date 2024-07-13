@@ -1,0 +1,2 @@
+# Web-Application-for-Used-Book-Exchange-with-NodeJS-ExpressJS-and-Sequelize
+Develop a back-end application using NodeJS, ExpressJS, Sequelize, and Sqlite3. The project includes setting up a SQLite3 database, defining models for authors and books, creating Express routes and controllers for CRUD operations, and integrating an API with fetch capabilities. This will be tested with a pre-built front-end.
